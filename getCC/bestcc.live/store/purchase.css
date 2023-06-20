@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #28223F;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 62.5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.top-l{
+    display: flex;
+    align-items: center;
+    
+}
+.top-l svg{
+    background-color: transparent;
+    color: #fff;
+    height: 1.6rem;
+    border: 1.5px solid #fff;
+    border-radius:0.5rem;
+}
+.top-l h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 0.75rem;
+}
+
+.top-r{
+    display: flex;
+    align-items: center;
+}
+.top-r svg{
+    background-color: transparent;
+    color: #fff;
+    height: 1.6rem;
+    margin-right: 0.75rem;
+}
+.dot{
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    background: red;
+    border-radius: 50%;
+    transform: translate(-250%, -150%);
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1rem;
+}
+.middle h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.extra-detail{
+    display: flex;
+    justify-content: center;
+}
+.detail {
+   padding-right: 2rem;
+   font-size: 0.8rem;
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start
+}
+.detail p {
+    margin-bottom:0;
+    font-size: 0.9rem;
+    /* padding-bottom:0; */
+}
+.detail-price{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end
+}
+.detail-price p{
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.border{
+    /* position: absolute; */
+    background-color:#535353;
+    border-radius: 0.4rem;
+    padding: 0.75rem;
+    width:60%;
+    height:auto;
+    margin: 0 auto;
+    transform: translateY(-90%);
+}
+#dark{
+    z-index: 2;
+}
+.form-box {
+	background-color: #1F1A36;
+	padding: 15px;
+	margin-top: 5px;
+} 
+.card-box{
+    background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+    padding-top: 20px;
+	width: 350px;
+	max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pay-method h3 {
+    color: #2D2747;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -0.5rem;
+}
+.pay-methods{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#credit {
+    background-color: #2D2747;
+    color: #fff;
+    height: 2.2rem;
+    width: 2.1rem;
+    border: 1.2px solid #2D2747;
+    border-radius:0.4rem; 
+}
+.pay-methods svg {
+    background-color: transparent;
+    color: #2D2747;
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 1.2px solid #2D2747;
+    border-radius:0.4rem; 
+}
+.name-area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.5rem;
+}
+.name-area h3{
+    margin-bottom: -0.75rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing:0.1rem;
+    text-align: start;
+    color: #535353;
+    font-weight: 400;
+}
+.name-area h3 > img {
+    margin-bottom: -0.3rem;
+    width:1.3rem;
+
+}
+.name-area h2 {
+    border: 1px solid #535353;
+    border-radius: 0.2rem;
+    padding:0.5rem;
+    text-transform: uppercase;
+    letter-spacing:0.1rem;
+    color: #535353;
+    font-weight:600;
+
+}
+
+
+.dates{
+    display: flex;
+    align-items: flex-start;
+}
+.pay-btn{
+    background-color: #2D2747;
+    border-radius: 5px;
+    width: 79.5%;
+    height: auto;
+    padding:0.4rem;
+    margin-bottom: 1rem;
+    /* margin-left: 2rem; */
+}
+.pay-btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/*------- Checkmark ---------*/
+
+.checkmark {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 56px;
+    left: 49px;
+    width: 52px;
+    height: 40px;
+}
+
+.checkmark path {
+    animation: 1s draw-check ease-out;
+}
+
+@keyframes draw-circle {
+    0% {
+        stroke-dasharray: 0, 330;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    80% {
+        stroke-dasharray: 330, 330;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes draw-check {
+    0% {
+        stroke-dasharray: 49, 80;
+        stroke-dashoffset: 48;
+        opacity: 0;
+    }
+    50% {
+        stroke-dasharray: 49, 80;
+        stroke-dashoffset: 48;
+        opacity: 1;
+    }
+    100% {
+        stroke-dasharray: 130, 80;
+        stroke-dashoffset: 48;
+    }
+}
+
+
+/*---------- Cross ----------*/
+
+.cross {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    width: 40px;
+    height: 40px;
+}
+
+.cross .first-line {
+    animation: 0.7s draw-first-line ease-out;
+}
+
+.cross .second-line {
+    animation: 0.7s draw-second-line ease-out;
+}
+
+@keyframes draw-first-line {
+    0% {
+        stroke-dasharray: 0, 56;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 0, 56;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 56, 330;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-second-line {
+    0% {
+        stroke-dasharray: 0, 55;
+        stroke-dashoffset: 1;
+    }
+    50% {
+        stroke-dasharray: 0, 55;
+        stroke-dashoffset: 1;
+    }
+    100% {
+        stroke-dasharray: 55, 0;
+        stroke-dashoffset: 70;
+    }
+}
+
+.alert-sign {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 40px;
+    left: 68px;
+    width: 15px;
+    height: 70px;
+    animation: 0.5s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.alert-sign .dot {
+    stroke: none;
+    fill: #ffffff;
+}
+
+@keyframes alert-sign-bounce {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+  /*Alert Section */
+            
+  .ava-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.ava-modal>* {
+    box-sizing: border-box;
+}
+
+.ava-alert {
+    background-color: white;
+    width: 80%;
+    text-align: right;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri;
+    font-weight: 900;
+    animation: 25s 1 ava_alert_animation;
+    -webkit-animation: 0.5s 1 ava_alert_animation;
+}
+
+@media (min-width: 650px) {
+    .ava-alert {
+        width: 300px;
+    }
+}
+
+@keyframes ava_alert_animation {
+    from {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.ava-alert .ava-progress-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.04);
+    animation-name: progressBarAnimation;
+    -webkit-animation-name: progressBarAnimation;
+}
+
+.ava-alert .ava-text-con {
+    position: relative;
+    z-index: 9999;
+}
+
+@keyframes progressBarAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.ava-alert__icon {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: inset 0px -5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.ava-alert__text {
+    padding: 15px;
+    line-height: 1.5em;
+    color: #545353;
+    font-size: 13px;
+}
+
+.ava-alert__btn {
+    width: 70px;
+    padding: 7px 0px;
+    display: block;
+    margin: auto;
+    margin-bottom: 13px;
+    border-radius: 0;
+    border: 0;
+    background-color: #475aee;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+}
+
+.ava-toast {
+    position: fixed;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.ava-toast svg {
+    width: 30px;
+    height: 30px;
+}
+
+.ava-toast .ava-alert__icon {
+    padding: 0 10px;
+    box-shadow: none;
+}
+
+.ava-toast .ava-text-con {
+    width: 100%;
+}
+
+.ava-toast .ava-alert__btn {
+    margin: 0;
+}
+
+.ava-toast .ava-alert__text {
+    padding: 5px;
+    width: 100%;
+}
+
+.svg-box {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+}
+
+.ava-text-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.green-stroke {
+    stroke: #ffffff;
+}
+
+.red-stroke {
+    stroke: #ffffff;
+}
+
+.yellow-stroke {
+    stroke: #ffffff;
+}
+
+.circular circle.path {
+    stroke-dasharray: 330;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    opacity: 0.4;
+    animation: 0.7s draw-circle ease-out;
+}
+/*------- Checkmark ---------*/
+
+.checkmark {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 56px;
+    left: 49px;
+    width: 52px;
+    height: 40px;
+}
+
+.checkmark path {
+    animation: 1s draw-check ease-out;
+}
+
+@keyframes draw-circle {
+    0% {
+        stroke-dasharray: 0, 330;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    80% {
+        stroke-dasharray: 330, 330;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes draw-check {
+    0% {
+        stroke-dasharray: 49, 80;
+        stroke-dashoffset: 48;
+        opacity: 0;
+    }
+    50% {
+        stroke-dasharray: 49, 80;
+        stroke-dashoffset: 48;
+        opacity: 1;
+    }
+    100% {
+        stroke-dasharray: 130, 80;
+        stroke-dashoffset: 48;
+    }
+}
+/*---------- Cross ----------*/
+
+.cross {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    width: 40px;
+    height: 40px;
+}
+
+.cross .first-line {
+    animation: 0.7s draw-first-line ease-out;
+}
+
+.cross .second-line {
+    animation: 0.7s draw-second-line ease-out;
+}
+
+@keyframes draw-first-line {
+    0% {
+        stroke-dasharray: 0, 56;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 0, 56;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 56, 330;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-second-line {
+    0% {
+        stroke-dasharray: 0, 55;
+        stroke-dashoffset: 1;
+    }
+    50% {
+        stroke-dasharray: 0, 55;
+        stroke-dashoffset: 1;
+    }
+    100% {
+        stroke-dasharray: 55, 0;
+        stroke-dashoffset: 70;
+    }
+}
+
+.alert-sign {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 40px;
+    left: 68px;
+    width: 15px;
+    height: 70px;
+    animation: 0.5s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.alert-sign .dot {
+    stroke: none;
+    fill: #ffffff;
+}
+
+@keyframes alert-sign-bounce {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .testimonial-author {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .testimonial-company {
+    font-size: 16px;
+    color: #777;
+}
